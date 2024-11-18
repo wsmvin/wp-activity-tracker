@@ -30,6 +30,9 @@
                     <td><?php echo esc_html($username); ?></td>
                     <td><?php echo esc_html($log->action_type . ' ' . $log->object_type); ?></td>
                     <td>
+                        <div class="wat-summary">
+                            <?php echo $this->get_change_summary($log); ?>
+                        </div>
                         <div class="wat-details-wrapper">
                             <div class="wat-details-toggle">View Changes</div>
                             <div class="wat-details-content">
